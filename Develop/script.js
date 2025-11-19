@@ -11,6 +11,7 @@ function update() {
     if (isNaN(start) || isNaN(end)) {
         deltaEl.textContent = noData;
         percentEl.textContent = noData;
+        return;
     }
 
     const delta = end - start;
